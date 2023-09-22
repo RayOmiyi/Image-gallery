@@ -13,6 +13,7 @@ const App = () => {
       <Route path='/signup' element={<PublicRoutes>
         <Signup/>
       </PublicRoutes>}/>
+     <Route path="/login" element={<PublicRoutes><Login /></PublicRoutes>} /> {/* Add the login route */}
     </Routes>
     </AuthProvider>
   )
