@@ -1,7 +1,7 @@
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react'
 import { auth } from '../firebase/config';
-import {useNavigate} from 'react-router-dom'
+import {Link,useNavigate} from 'react-router-dom'
 const Signup = () => {
   const navigate = useNavigate()
   const [email, setEmail] = useState('');
@@ -41,6 +41,8 @@ const Signup = () => {
         </div>
         <div className="form-control mt-6">
           <button className="btn btn-primary">Signup</button>
+                        <Link to='/login'>Sign In</Link>
+
         </div>
       </div>
     </div>
