@@ -5,6 +5,8 @@ import Signup from './pages/Signup'
 import { AuthProvider } from './context/auth.jsx'
 import PublicRoutes from './routes/PublicRoutes.jsx'
 import PrivateRoutes from './routes/PrivateRoutes.jsx'
+import Login from './pages/Login.jsx'
+
 const App = () => {
   return (
     <AuthProvider>
